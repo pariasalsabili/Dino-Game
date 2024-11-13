@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #e0f7fa;
+    font-family: Arial, sans-serif;
+}
+
+#game {
+    position: relative;
+    width: 50%;
+    height: 200px;
+    margin: 10vh auto;
+    background-color: #b2dfdb;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid #00695c;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#ground {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    background-color: #004d40;
+}
+
+#character {
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    background: linear-gradient(145deg, #4caf50, #388e3c);
+    border-radius: 50% 50% 0 0;
+    bottom: 20px;
+    left: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.animate {
+    animation: jump 500ms;
+}
+
+@keyframes jump {
+    0% { bottom: 20px; }
+    30% { bottom: 100px; }
+    70% { bottom: 100px; }
+    100% { bottom: 20px; }
+}
+
+#block {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(145deg, #d32f2f, #b71c1c);
+    border-radius: 5px;
+    bottom: 20px;
+    left: 100%;
+    animation: block 1.5s infinite linear;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes block {
+    0% { left: 100%; }
+    100% { left: -30px; }
+}
