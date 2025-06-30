@@ -1,3 +1,4 @@
+
 # Dino Jump Game
 A simple, interactive browser-based game where a dinosaur character must jump over an approaching block to avoid a collision. Built with HTML, CSS, and JavaScript, this project is perfect for beginners who want to explore basic game development concepts.
 
